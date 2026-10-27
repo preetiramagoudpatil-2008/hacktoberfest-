@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f3f5ef">
+    <meta name="theme-color" content="#173f2d">
     <meta name="description" content="Swarasetu is a growing audiovisual archive celebrating India's traditional music and the people who carry it forward.">
     <title>Swarasetu — A living music archive</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +21,7 @@
       </a>
       <nav class="site-nav" aria-label="Main navigation">
         <a href="#archive">The archive</a>
+        <a href="#voices">Voices</a>
         <a href="#about">Our purpose</a>
         <a class="nav-cta" href="#listen">Preview a recording <span aria-hidden="true">↗</span></a>
       </nav>
@@ -30,14 +31,14 @@
       <section class="intro" id="top" aria-labelledby="page-title">
         <div class="intro-copy">
           <p class="eyebrow"><span class="eyebrow-dot"></span> AN AUDIOVISUAL HERITAGE PROJECT</p>
-          <h1 id="page-title">Many voices.<br><em>One living</em> tradition.</h1>
+          <h1 id="page-title">Many voices in<br><em>one living</em> tradition</h1>
           <p class="intro-text">Swarasetu brings the music, memories and makers of India's traditional sound worlds into one evolving archive.</p>
           <a class="text-link" href="#archive">Find a sound <span aria-hidden="true">↓</span></a>
         </div>
         <div class="featured-record">
-          <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=85" alt="A vocalist performing on stage, illustrative image">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=85" alt="A group of musicians and performers together in a warm traditional concert setting, representing multiple Indian musical traditions in one image">
           <div class="photo-shade"></div>
-          <div class="feature-topline"><span>LISTENING ROOM / 01</span><span>ILLUSTRATIVE PHOTO</span></div>
+          <div class="feature-topline"><span>LISTENING ROOM / 01</span><span>ONE SHARED SOUND</span></div>
           <div class="feature-caption">
             <p class="feature-kicker">A NOTE ON PRESERVATION</p>
             <h2>Every song holds<br>a place and a person.</h2>
@@ -50,7 +51,7 @@
       <section class="archive-section" id="archive" aria-labelledby="archive-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">SAMPLE COLLECTION <span class="eyebrow-rule"></span> 15 RECORDS</p>
+              <p class="eyebrow">SAMPLE COLLECTION <span class="eyebrow-rule"></span> 33 RECORDS</p>
             <h2 id="archive-title">Explore the archive</h2>
           </div>
           <label class="search-box">
@@ -62,14 +63,15 @@
         </div>
 
         <div class="collection-tabs" role="group" aria-label="Browse collection">
-          <button class="collection-tab is-active" type="button" data-collection="all" aria-pressed="true">All records <span>19</span></button>
-          <button class="collection-tab" type="button" data-collection="songs" aria-pressed="false">Songs &amp; stories <span>9</span></button>
-          <button class="collection-tab" type="button" data-collection="instruments" aria-pressed="false">Instruments <span>6</span></button>
-          <button class="collection-tab" type="button" data-collection="videos" aria-pressed="false">Videos &amp; field media <span>4</span></button>
+          <button class="collection-tab is-active" type="button" data-collection="all" aria-pressed="true">All records <span>33</span></button>
+          <button class="collection-tab" type="button" data-collection="songs" aria-pressed="false">Songs &amp; stories <span>11</span></button>
+          <button class="collection-tab" type="button" data-collection="instruments" aria-pressed="false">Instruments <span>8</span></button>
+          <button class="collection-tab" type="button" data-collection="favorites" aria-pressed="false">Favorites <span id="favorite-count">0</span></button>
+          <button class="collection-tab" type="button" data-collection="videos" aria-pressed="false">Videos &amp; field media <span>14</span></button>
         </div>
 
         <div class="filter-row" role="group" aria-label="Filter by tradition">
-          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All traditions <span>19</span></button>
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All traditions <span>33</span></button>
           <button class="filter-button" type="button" data-filter="hindustani" aria-pressed="false">Hindustani</button>
           <button class="filter-button" type="button" data-filter="carnatic" aria-pressed="false">Carnatic</button>
           <button class="filter-button" type="button" data-filter="folk" aria-pressed="false">Folk &amp; regional</button>
@@ -186,6 +188,75 @@
             <button class="record-open" type="button" data-record="mridangam">Open record <span aria-hidden="true">→</span></button>
           </article>
 
+          <article class="record-card" data-collection="instruments" data-tradition="carnatic" data-search="ghatam clay pot percussion carnatic india shivarathri festival vemulawada">
+            <button class="record-image image-pot" type="button" data-record="ghatam" aria-label="Open Ghatam: clay in the rhythm">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Ghatam_Performance_in_Shivarathri_Festival_at_Raja_Rajeswara_Temple%2C_Vemulawada_%2804.03.2019%29.jpg" alt="A ghatam musician performing at Vemulawada's Shivarathri festival" loading="lazy">
+              <span class="image-label">INSTRUMENT / GHATAM</span><span class="image-arrow" aria-hidden="true">↗</span>
+            </button>
+            <div class="record-meta"><span>CARNATIC</span><span>PERCUSSION</span></div>
+            <h3>Ghatam: clay in the rhythm</h3>
+            <p>A tuned earthenware pot played with fingers, palms and fingertips.</p>
+            <button class="record-open" type="button" data-record="ghatam">Open record <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="record-card" data-collection="instruments" data-tradition="hindustani" data-search="sarangi bowed strings hindustani instrument india dilli haat">
+            <button class="record-image image-bow" type="button" data-record="sarangi" aria-label="Open Sarangi: a voice in bowed strings">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Dilli_Haat_Sarangi_Player.jpg" alt="A musician playing sarangi at Dilli Haat" loading="lazy">
+              <span class="image-label">INSTRUMENT / SARANGI</span><span class="image-arrow" aria-hidden="true">↗</span>
+            </button>
+            <div class="record-meta"><span>HINDUSTANI</span><span>BOWED STRINGS</span></div>
+            <h3>Sarangi: a voice in bowed strings</h3>
+            <p>A short-necked bowed instrument known for its vocal, sliding tone.</p>
+            <button class="record-open" type="button" data-record="sarangi">Open record <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="record-card" data-collection="songs" data-tradition="carnatic" data-search="R K Srikantan carnatic vocal concert Mysore Karnataka 2006 violin mridangam ghatam">
+            <button class="record-image image-coral" type="button" data-record="srikantan-photo" aria-label="Open archival photo of an R. K. Srikantan Carnatic concert">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/R_k_srikantan_carnatic_concert.jpg" alt="R. K. Srikantan performing with vocal support, violin, mridangam and ghatam" loading="lazy">
+              <span class="image-label">CARNATIC / CONCERT</span><span class="image-arrow" aria-hidden="true">↗</span>
+            </button>
+            <div class="record-meta"><span>CARNATIC</span><span>2006</span></div>
+            <h3>R. K. Srikantan in concert</h3>
+            <p>An archival performance photograph with violin, mridangam and ghatam accompaniment.</p>
+            <a class="record-open" href="https://commons.wikimedia.org/wiki/File:R_k_srikantan_carnatic_concert.jpg" target="_blank" rel="noopener noreferrer">Photo: Sais72 · CC BY-SA 3.0 <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="record-card media-card" data-collection="videos" data-tradition="carnatic" data-search="T M Krishna singing Carnatic concert Kollam Kerala 2021 video">
+            <div class="media-screen">
+              <video controls playsinline preload="none" aria-label="T. M. Krishna sings at Kollam in 2021">
+                <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/7/70/T.M._Krishna_sings_at_Kollam_2021.ogv/T.M._Krishna_sings_at_Kollam_2021.ogv.240p.vp9.webm" type="video/webm; codecs=vp9,opus">
+                Your browser cannot play this video. <a href="https://commons.wikimedia.org/wiki/File:T.M._Krishna_sings_at_Kollam_2021.ogv">Open the source video</a>.
+              </video>
+              <span class="media-label">LIVE VOCAL / 2021</span>
+            </div>
+            <div class="record-meta"><span>CARNATIC VOCAL</span><span>1 MIN</span></div>
+            <h3>T. M. Krishna sings at Kollam</h3>
+            <p>A brief live excerpt recorded at Kadappakada Sports Club, Kollam.</p>
+            <a class="record-open" href="https://commons.wikimedia.org/wiki/File:T.M._Krishna_sings_at_Kollam_2021.ogv" target="_blank" rel="noopener noreferrer">Video: Kannan Shanmugam · CC BY-SA 4.0 <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="record-card media-card" data-collection="videos" data-tradition="carnatic" data-search="Shashank Subramanyam Carnatic flute recital mridangam violin ghatam ICCR">
+            <div class="media-screen archive-screen">
+              <iframe src="https://archive.org/embed/dni.ncaa.ICCR-1345-VHS" title="Carnatic flute recital by Vidwan Shashank Subramanyam" loading="lazy" allowfullscreen></iframe>
+              <span class="media-label">FLUTE RECITAL / CARNATIC</span>
+            </div>
+            <div class="record-meta"><span>SHASHANK SUBRAMANYAM</span><span>40 MIN</span></div>
+            <h3>Carnatic flute recital</h3>
+            <p>Vidwan Shashank Subramanyam accompanied by mridangam, violin and ghatam.</p>
+            <a class="record-open" href="https://archive.org/details/dni.ncaa.ICCR-1345-VHS" target="_blank" rel="noopener noreferrer">Indian Council for Cultural Relations archive · rights held by ICCR <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="record-card media-card" data-collection="videos" data-tradition="carnatic" data-search="Carnatic music recital Shri Sharada Sangeetha Sabha mridangam ghatam dholak pakhawaja ICCR">
+            <div class="media-screen archive-screen">
+              <iframe src="https://archive.org/embed/dni.ncaa.ICCR-1511-VHS" title="Carnatic music recital by a troupe from Sharada Sangeetha Sabha" loading="lazy" allowfullscreen></iframe>
+              <span class="media-label">ENSEMBLE RECITAL / CARNATIC</span>
+            </div>
+            <div class="record-meta"><span>SHARADA SANGEETHA SABHA</span><span>60 MIN</span></div>
+            <h3>Carnatic ensemble recital</h3>
+            <p>A sabha performance featuring mridangam, ghatam, dholak and pakhawaja.</p>
+            <a class="record-open" href="https://archive.org/details/dni.ncaa.ICCR-1511-VHS" target="_blank" rel="noopener noreferrer">Indian Council for Cultural Relations · rights held by ICCR <span aria-hidden="true">↗</span></a>
+          </article>
+
           <article class="record-card" data-collection="songs" data-tradition="folk" data-search="bihu assam seasonal folk dhol pepa spring dance song">
             <button class="record-image image-marigold" type="button" data-record="bihu" aria-label="Open Bihu: songs of the spring">
               <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=900&q=80" alt="Illustrative image of a live music gathering" loading="lazy">
@@ -255,6 +326,39 @@
             <a class="record-open" href="https://commons.wikimedia.org/wiki/File:Dollu_Kunitha_-_Karnataka_Folk_Art3.webm" target="_blank" rel="noopener noreferrer">Source: Santhosh Notagar99, CC0 <span aria-hidden="true">↗</span></a>
           </article>
 
+          <article class="record-card media-card" data-collection="videos" data-tradition="hindustani" data-search="hindustani vocal recital Gangubai Hangal disciples Puriya Dhanashree raga tabla sarangi 1988">
+            <div class="media-screen archive-screen">
+              <iframe src="https://archive.org/embed/dni.ncaa.ICCR-471-VHS" title="Gangubai Hangal and disciples perform a Hindustani vocal recital" loading="lazy" allowfullscreen></iframe>
+              <span class="media-label">ARCHIVAL VOCAL / 1988</span>
+            </div>
+            <div class="record-meta"><span>HINDUSTANI VOCAL</span><span>RAGA PURIYA DHANASHREE</span></div>
+            <h3>Gangubai Hangal and disciples</h3>
+            <p>An archival recital with performances by Naganath Nadiyar, Krishna Hangal and Gangubai Hangal.</p>
+            <a class="record-open" href="https://archive.org/details/dni.ncaa.ICCR-471-VHS" target="_blank" rel="noopener noreferrer">Indian Council for Cultural Relations · rights held by ICCR <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="record-card media-card" data-collection="videos" data-tradition="hindustani" data-search="dhrupad recital Madhu Bhatt Tailang Todi raga pakhawaj tanpura 1988">
+            <div class="media-screen archive-screen">
+              <iframe src="https://archive.org/embed/dni.ncaa.ICCR-1534-VHS" title="Dhrupad recital by Dr. Madhu Bhatt Tailang in Raga Todi" loading="lazy" allowfullscreen></iframe>
+              <span class="media-label">DHRUPAD / RAGA TODI</span>
+            </div>
+            <div class="record-meta"><span>HINDUSTANI VOCAL</span><span>1988</span></div>
+            <h3>Dhrupad: an alap in Raga Todi</h3>
+            <p>Dr. Madhu Bhatt Tailang performs with tanpura and pakhawaj in this archival recital.</p>
+            <a class="record-open" href="https://archive.org/details/dni.ncaa.ICCR-1534-VHS" target="_blank" rel="noopener noreferrer">Indian Council for Cultural Relations · rights held by ICCR <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="record-card media-card" data-collection="videos" data-tradition="hindustani" data-search="Hindustani vocal Koushik Bhattacharya Kedar Desh khayal bhajan 1992">
+            <div class="media-screen archive-screen">
+              <iframe src="https://archive.org/embed/dni.ncaa.ICCR-2072-VHS" title="Hindustani vocal recital by Shri Koushik Bhattacharya" loading="lazy" allowfullscreen></iframe>
+              <span class="media-label">VOCAL RECITAL / 1992</span>
+            </div>
+            <div class="record-meta"><span>HINDUSTANI VOCAL</span><span>RAGA KEDAR &amp; DESH</span></div>
+            <h3>Koushik Bhattacharya: Kedar and Desh</h3>
+            <p>A khayal recital in Vilambit and Drut tala, concluding with a bhajan.</p>
+            <a class="record-open" href="https://archive.org/details/dni.ncaa.ICCR-2072-VHS" target="_blank" rel="noopener noreferrer">Indian Council for Cultural Relations · rights held by ICCR <span aria-hidden="true">↗</span></a>
+          </article>
+
           <article class="record-card media-card" data-collection="videos" data-tradition="folk" data-search="lavani pune festival maharashtra video folk dance tamasha">
             <div class="media-screen archive-screen">
               <iframe src="https://archive.org/embed/dni.ncaa.CVI-SUR_R_1744-UMHB" title="Pune Festival: Lavani archival video" loading="lazy" allowfullscreen></iframe>
@@ -287,8 +391,158 @@
             <p>A place to gather Kannada cradle songs and family-held recordings.</p>
             <a class="record-open" href="https://www.youtube.com/results?search_query=Kannada+traditional+jogula+lullaby" target="_blank" rel="noopener noreferrer">Search public video sources <span aria-hidden="true">↗</span></a>
           </article>
+
+          <article class="record-card media-card" data-collection="videos" data-tradition="folk" data-search="manganiyar wedding marriage songs rajasthan ghoomar lehriya 1990 archive">
+            <div class="media-screen archive-screen">
+              <iframe src="https://archive.org/embed/dni.ncaa.RS-056-VHS" title="Rajasthani Manganiyar folk music at a community wedding, 1990" loading="lazy" allowfullscreen></iframe>
+              <span class="media-label">WEDDING VIDEO / 1990</span>
+            </div>
+            <div class="record-meta"><span>MANGANIYAR WEDDING</span><span>RAJASTHAN</span></div>
+            <h3>Songs from a Manganiyar wedding</h3>
+            <p>A 1990 community recording of Rajasthani marriage songs sung for the wedding gathering.</p>
+            <a class="record-open" href="https://archive.org/details/dni.ncaa.RS-056-VHS" target="_blank" rel="noopener noreferrer">Rupayan Sansthan · CC BY-NC 4.0 <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="record-card media-card" data-collection="videos" data-tradition="folk" data-search="wedding songs ghoomar lehriya rajasthan langa folk marriage 2013">
+            <div class="media-screen archive-screen">
+              <iframe src="https://archive.org/embed/dni.ncaa.RS-655-MDV" title="Rajasthani wedding songs including Ghoomar and Lehriya" loading="lazy" allowfullscreen></iframe>
+              <span class="media-label">WEDDING SONGS / 2013</span>
+            </div>
+            <div class="record-meta"><span>LANGA / MARRIAGE</span><span>RAJASTHAN</span></div>
+            <h3>Ghoomar, Kyon Jagoi Rea and Lehriya</h3>
+            <p>Three Rajasthani folk songs performed in a marriage ceremony by Langa musicians.</p>
+            <a class="record-open" href="https://archive.org/details/dni.ncaa.RS-655-MDV" target="_blank" rel="noopener noreferrer">Source and rights: Rupayan Sansthan <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="record-card media-card" data-collection="videos" data-tradition="folk" data-search="rajasthani folk music festival tilonia kalbelia langa manganiyar 2005">
+            <div class="media-screen archive-screen">
+              <iframe src="https://archive.org/embed/dni.ncaa.RS-244-MDV" title="Rajasthani Folk Music Festival at Tilonia, 2005" loading="lazy" allowfullscreen></iframe>
+              <span class="media-label">FESTIVAL VIDEO / 2005</span>
+            </div>
+            <div class="record-meta"><span>TILONIA FESTIVAL</span><span>RAJASTHAN</span></div>
+            <h3>Rajasthani Folk Music Festival</h3>
+            <p>Kalbelia dance and Langa and Manganiyar songs recorded at Tilonia.</p>
+            <a class="record-open" href="https://archive.org/details/dni.ncaa.RS-244-MDV" target="_blank" rel="noopener noreferrer">Rupayan Sansthan · CC BY-NC 4.0 <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="record-card media-card reel-card" data-collection="videos" data-tradition="folk" data-search="five minute reel wedding marriage songs rajasthan manganiyar langa tilonia festival">
+            <div class="media-screen reel-screen">
+              <video id="heritage-reel" controls playsinline preload="none" poster="https://archive.org/download/dni.ncaa.RS-056-VHS/__ia_thumb.jpg" src="https://archive.org/download/dni.ncaa.RS-056-VHS/RS-056-VHS.mp4" aria-label="Five-minute wedding and festival music reel">
+                Your browser cannot play this video. Use the source recordings below.
+              </video>
+              <span class="media-label">5-MINUTE REEL / RAJASTHAN</span>
+            </div>
+            <div class="record-meta"><span>WEDDING TO FESTIVAL</span><span>3 × 100 SECONDS</span></div>
+            <h3>Wedding songs to festival rhythms</h3>
+            <p>A five-minute stream of Manganiyar and Langa wedding singing followed by the Tilonia folk festival.</p>
+            <p class="reel-status" id="reel-status" aria-live="polite">Part 1 of 3 · Manganiyar wedding · 0:00 / 5:00</p>
+            <progress class="reel-progress" id="reel-progress" max="300" value="0" aria-label="Five-minute reel progress"></progress>
+            <button class="record-open" id="reel-restart" type="button">Replay the five-minute reel <span aria-hidden="true">↻</span></button>
+            <div class="reel-sources" aria-label="Reel source recordings">
+              <a href="https://archive.org/details/dni.ncaa.RS-056-VHS" target="_blank" rel="noopener noreferrer">Wedding recording · 1990 · CC BY-NC 4.0</a>
+              <a href="https://archive.org/details/dni.ncaa.RS-655-MDV" target="_blank" rel="noopener noreferrer">Wedding songs · Rupayan Sansthan</a>
+              <a href="https://archive.org/details/dni.ncaa.RS-244-MDV" target="_blank" rel="noopener noreferrer">Tilonia festival · 2005 · CC BY-NC 4.0</a>
+            </div>
+          </article>
+
+          <article class="record-card media-card" data-collection="songs" data-tradition="folk" data-search="marriage festival songs madhya pradesh CCRT folk music audio">
+            <div class="audio-screen">
+              <span class="audio-label">ARCHIVAL AUDIO / CCRT</span>
+              <audio controls preload="none" aria-label="Marriage and Festival Songs, Volume One">
+                <source src="https://archive.org/download/dni.ncaa.CCRT-317-SP/CCRT-317-SP.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+            <div class="record-meta"><span>MARRIAGE &amp; FESTIVAL</span><span>MADHYA PRADESH</span></div>
+            <h3>Marriage and Festival Songs, Vol. I</h3>
+            <p>An archival folk-song recording from Madhya Pradesh, preserved by the CCRT.</p>
+            <a class="record-open" href="https://archive.org/details/dni.ncaa.CCRT-317-SP" target="_blank" rel="noopener noreferrer">CCRT archive record · rights held by CCRT <span aria-hidden="true">↗</span></a>
+          </article>
         </div>
         <p class="empty-state" id="empty-state" hidden>No records match that search. Try another word or tradition.</p>
+      </section>
+
+      <section class="voices-section" id="voices" aria-labelledby="voices-title">
+        <div class="voices-heading">
+          <div>
+            <p class="eyebrow">ARCHIVAL PORTRAITS <span class="eyebrow-rule"></span> ACROSS INDIA</p>
+            <h2 id="voices-title">Voices that carry a place</h2>
+          </div>
+          <p>Six artists from different regions show how a voice can carry a home, a lineage and a listening tradition across generations.</p>
+        </div>
+        <div class="voice-grid">
+          <article class="voice-card">
+            <div class="voice-portrait">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Gangubai_Hangal_%28cropped%29.jpg" alt="Archival portrait of Gangubai Hangal with her daughter Krishna" loading="lazy">
+              <span class="portrait-date">BEFORE 1941</span>
+            </div>
+            <div class="voice-caption">
+              <p class="voice-meta">HANGAL, KARNATAKA <span>·</span> HINDUSTANI VOCAL</p>
+              <h3>Gangubai Hangal</h3>
+              <p>Born in Hangal in 1913, Hangal became a major voice of the Kirana gharana and a defining figure in Karnataka's Hindustani music history.</p>
+              <a href="https://commons.wikimedia.org/wiki/File:Gangubai_Hangal_(cropped).jpg" target="_blank" rel="noopener noreferrer">View photograph · public domain <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="voice-card">
+            <div class="voice-portrait">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Bhimsen_Joshi.jpg" alt="Bhimsen Joshi during his first recording, 1962" loading="lazy">
+              <span class="portrait-date">1962</span>
+            </div>
+            <div class="voice-caption">
+              <p class="voice-meta">RON, KARNATAKA <span>·</span> HINDUSTANI VOCAL</p>
+              <h3>Bhimsen Joshi</h3>
+              <p>Born in Ron in 1922, Joshi brought the Kirana gharana to listeners across India through a celebrated career in Hindustani classical music.</p>
+              <a href="https://commons.wikimedia.org/wiki/File:Bhimsen_Joshi.jpg" target="_blank" rel="noopener noreferrer">British Institute of Recorded Sound · public domain <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="voice-card">
+            <div class="voice-portrait">
+              <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Kesarbai_Kerkar.png" alt="Portrait of Kesarbai Kerkar, a legendary Hindustani vocalist from Goa" loading="lazy">
+              <span class="portrait-date">1940S</span>
+            </div>
+            <div class="voice-caption">
+              <p class="voice-meta">GOA <span>·</span> HINDUSTANI VOCAL</p>
+              <h3>Kesarbai Kerkar</h3>
+              <p>Raised in Goa, Kerkar carried the khayal tradition with a refined phrase and a deeply rooted performance practice that is still remembered.</p>
+              <a href="https://en.wikipedia.org/wiki/Kesarbai_Kerkar" target="_blank" rel="noopener noreferrer">Learn more about Kesarbai Kerkar <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="voice-card">
+            <div class="voice-portrait">
+              <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Ms_subbulakshmi.jpg" alt="Portrait of M. S. Subbulakshmi, a renowned Carnatic vocalist from Tamil Nadu" loading="lazy">
+              <span class="portrait-date">1950S</span>
+            </div>
+            <div class="voice-caption">
+              <p class="voice-meta">MADURAI, TAMIL NADU <span>·</span> CARNATIC VOCAL</p>
+              <h3>M. S. Subbulakshmi</h3>
+              <p>Born in Madurai, Subbulakshmi became one of the most influential Carnatic voices of the twentieth century, carrying the tradition into concert halls and homes.</p>
+              <a href="https://en.wikipedia.org/wiki/M._S._Subbulakshmi" target="_blank" rel="noopener noreferrer">Learn more about M. S. Subbulakshmi <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="voice-card">
+            <div class="voice-portrait">
+              <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Pandit_balamuralikrishna.jpg" alt="Portrait of M. Balamuralikrishna, a celebrated Carnatic vocalist and multi-instrumentalist from Andhra Pradesh" loading="lazy">
+              <span class="portrait-date">1970S</span>
+            </div>
+            <div class="voice-caption">
+              <p class="voice-meta">ANDHRA PRADESH <span>·</span> CARNATIC VOCAL</p>
+              <h3>M. Balamuralikrishna</h3>
+              <p>From Andhra Pradesh, Balamuralikrishna carried the grammar of Carnatic music with extraordinary vocal range and a deep attachment to place-bound tradition.</p>
+              <a href="https://en.wikipedia.org/wiki/M._Balamuralikrishna" target="_blank" rel="noopener noreferrer">Learn more about M. Balamuralikrishna <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="voice-card">
+            <div class="voice-portrait">
+              <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Bismillah_Khan.jpg" alt="Portrait of Ustad Bismillah Khan, the celebrated shehnai maestro from Varanasi" loading="lazy">
+              <span class="portrait-date">1980S</span>
+            </div>
+            <div class="voice-caption">
+              <p class="voice-meta">VARANASI, UTTAR PRADESH <span>·</span> SHEHNAI</p>
+              <h3>Bismillah Khan</h3>
+              <p>From Varanasi, Khan carried the sound of the shehnai into the public imagination while staying deeply tied to the sacred and musical geography of Banaras.</p>
+              <a href="https://en.wikipedia.org/wiki/Bismillah_Khan" target="_blank" rel="noopener noreferrer">Learn more about Bismillah Khan <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section class="purpose-section" id="about">
@@ -306,11 +560,26 @@
           <h2 id="listen-title">Bring a recording<br><em>into the room.</em></h2>
         </div>
         <div class="listen-action">
-          <p>Choose an audio file on your device to preview it here. It stays in this browser session and is not uploaded.</p>
-          <label class="upload-button" for="audio-file"><span aria-hidden="true">＋</span> Choose an audio file</label>
-          <input class="visually-hidden" id="audio-file" type="file" accept="audio/*">
-          <p class="file-name" id="file-name" aria-live="polite">No audio selected</p>
-          <audio id="audio-preview" controls hidden></audio>
+          <p>Choose audio files from your device to build a listening queue. They stay in this browser and are not uploaded.</p>
+          <label class="upload-button" for="audio-file"><span aria-hidden="true">＋</span> Add audio files</label>
+          <input class="visually-hidden" id="audio-file" type="file" accept="audio/*" multiple>
+          <p class="file-name" id="file-name" aria-live="polite">No tracks queued</p>
+          <div class="audio-player" aria-label="Local audio player">
+            <span class="player-track-name" id="player-track-name">Choose audio to begin</span>
+            <div class="player-controls">
+              <button class="player-icon" id="player-previous" type="button" title="Previous track" aria-label="Previous track" disabled>◀|</button>
+              <button class="player-icon player-icon-primary" id="player-toggle" type="button" title="Play" aria-label="Play" disabled>▶</button>
+              <button class="player-icon" id="player-next" type="button" title="Next track" aria-label="Next track" disabled>|▶</button>
+              <div class="player-timeline">
+                <span class="player-time" id="player-current-time">0:00</span>
+                <input class="player-range" id="player-seek" type="range" min="0" max="1000" value="0" aria-label="Seek through track" disabled>
+                <span class="player-time" id="player-duration">0:00</span>
+              </div>
+            </div>
+            <label class="player-volume">Volume <input class="player-range" id="player-volume" type="range" min="0" max="1" step="0.01" value="0.8" aria-label="Volume"></label>
+            <ol class="player-queue" id="audio-queue" aria-label="Playback queue"></ol>
+            <audio class="player-audio" id="audio-preview" preload="metadata"></audio>
+          </div>
         </div>
       </section>
     </main>
@@ -327,6 +596,10 @@
       <h2 id="dialog-title"></h2>
       <p class="dialog-place" id="dialog-place"></p>
       <p class="dialog-description" id="dialog-description"></p>
+      <div class="story-panel" id="dialog-story" hidden>
+        <p class="eyebrow">STORY THREAD</p>
+        <p id="dialog-story-text"></p>
+      </div>
       <a class="dialog-image-credit" id="dialog-image-credit" target="_blank" rel="noopener noreferrer" hidden>Image source &amp; credit ↗</a>
       <div class="dialog-details"><span>TRADITION</span><strong id="dialog-tradition"></strong><span>LISTENING NOTE</span><strong id="dialog-note"></strong></div>
       <p class="dialog-hint">To hear an excerpt, use the listening room below and choose an audio file from your device.</p>
