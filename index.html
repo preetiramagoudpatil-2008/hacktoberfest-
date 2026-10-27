@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f3f5ef">
+    <meta name="description" content="Swarasetu is a growing audiovisual archive celebrating India's traditional music and the people who carry it forward.">
+    <title>Swarasetu — A living music archive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to archive</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Swarasetu home">
+        <span class="brand-mark" aria-hidden="true">s</span>
+        <span>swara<span class="brand-light">setu</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#archive">The archive</a>
+        <a href="#about">Our purpose</a>
+        <a class="nav-cta" href="#listen">Preview a recording <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="intro" id="top" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> AN AUDIOVISUAL HERITAGE PROJECT</p>
+          <h1 id="page-title">Many voices.<br><em>One living</em> tradition.</h1>
+          <p class="intro-text">Swarasetu brings the music, memories and makers of India's traditional sound worlds into one evolving archive.</p>
+          <a class="text-link" href="#archive">Find a sound <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="featured-record">
+          <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=85" alt="A vocalist performing on stage, illustrative image">
+          <div class="photo-shade"></div>
+          <div class="feature-topline"><span>LISTENING ROOM / 01</span><span>ILLUSTRATIVE PHOTO</span></div>
+          <div class="feature-caption">
+            <p class="feature-kicker">A NOTE ON PRESERVATION</p>
+            <h2>Every song holds<br>a place and a person.</h2>
+            <a href="#about" class="feature-link">Why these stories matter <span aria-hidden="true">↗</span></a>
+          </div>
+          <span class="photo-index" aria-hidden="true">01 — 06</span>
+        </div>
+      </section>
+
+      <section class="archive-section" id="archive" aria-labelledby="archive-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">SAMPLE COLLECTION <span class="eyebrow-rule"></span> 15 RECORDS</p>
+            <h2 id="archive-title">Explore the archive</h2>
+          </div>
+          <label class="search-box">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <span class="visually-hidden">Search recordings</span>
+            <input id="record-search" type="search" placeholder="Search music, place, instrument" autocomplete="off">
+            <kbd>/</kbd>
+          </label>
+        </div>
+
+        <div class="collection-tabs" role="group" aria-label="Browse collection">
+          <button class="collection-tab is-active" type="button" data-collection="all" aria-pressed="true">All records <span>19</span></button>
+          <button class="collection-tab" type="button" data-collection="songs" aria-pressed="false">Songs &amp; stories <span>9</span></button>
+          <button class="collection-tab" type="button" data-collection="instruments" aria-pressed="false">Instruments <span>6</span></button>
+          <button class="collection-tab" type="button" data-collection="videos" aria-pressed="false">Videos &amp; field media <span>4</span></button>
+        </div>
+
+        <div class="filter-row" role="group" aria-label="Filter by tradition">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All traditions <span>19</span></button>
+          <button class="filter-button" type="button" data-filter="hindustani" aria-pressed="false">Hindustani</button>
+          <button class="filter-button" type="button" data-filter="carnatic" aria-pressed="false">Carnatic</button>
+          <button class="filter-button" type="button" data-filter="folk" aria-pressed="false">Folk &amp; regional</button>
+        </div>
+
+        <div class="record-grid" id="record-grid">
+          <article class="record-card" data-collection="songs" data-tradition="hindustani" data-search="dhrupad alap hindustani vocal darbhanga raga morning">
+            <button class="record-image" type="button" data-record="dhrupad" aria-label="Open Dhrupad: the morning alap">
+              <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=80" alt="Singer holding a microphone under stage lights, illustrative image" loading="lazy">
+              <span class="image-label">VOICE / RAGA</span><span class="image-arrow" aria-hidden="true">↗</span>
+            </button>
+            <div class="record-meta"><span>HINDUSTANI</span><span>BIHAR</span></div>
+            <h3>Dhrupad: the morning alap</h3>
+            <p>A slow unfolding of raga, breath and resonance.</p>
+            <button class="record-open" type="button" data-record="dhrupad">Open record <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="record-card" data-collection="instruments" data-tradition="carnatic" data-search="veena carnatic instrument thanjavur tamil nadu string">
+            <button class="record-image image-green" type="button" data-record="veena" aria-label="Open Veena: strings of Thanjavur">
+              <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=900&q=80" alt="Close-up of a musician's hands on a string instrument, illustrative image" loading="lazy">
+              <span class="image-label">INSTRUMENT / VEENA</span><span class="image-arrow" aria-hidden="true">↗</span>
+            </button>
+            <div class="record-meta"><span>CARNATIC</span><span>TAMIL NADU</span></div>
+            <h3>Veena: strings of Thanjavur</h3>
+            <p>Meet the instrument and the hands that shape its voice.</p>
+            <button class="record-open" type="button" data-record="veena">Open record <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="record-card" data-collection="songs" data-tradition="folk" data-search="baul songs bengal folk ektara wandering mystic west bengal">
+            <button class="record-image image-coral" type="button" data-record="baul" aria-label="Open Baul songs: a road without walls">
+              <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=900&q=80" alt="Live music performance with a crowd, illustrative image" loading="lazy">
+              <span class="image-label">FOLK / BAUL</span><span class="image-arrow" aria-hidden="true">↗</span>
+            </button>
+            <div class="record-meta"><span>FOLK &amp; REGIONAL</span><span>BENGAL</span></div>
+            <h3>Baul songs: a road without walls</h3>
+            <p>Stories of devotion carried from village to village.</p>
+            <button class="record-open" type="button" data-record="baul">Open record <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="record-card" data-collection="songs" data-tradition="hindustani" data-search="khayal vocal hindustani raga improvisation jaipur gharana">
+            <button class="record-image image-yellow" type="button" data-record="khayal" aria-label="Open Khayal: a raga in motion">
+              <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80" alt="Vocalist singing into a microphone, illustrative image" loading="lazy">
+              <span class="image-label">VOICE / KHAYAL</span><span class="image-arrow" aria-hidden="true">↗</span>
+            </button>
+            <div class="record-meta"><span>HINDUSTANI</span><span>RAJASTHAN</span></div>
+            <h3>Khayal: a raga in motion</h3>
+            <p>Improvisation as a conversation between artist and raga.</p>
+            <button class="record-open" type="button" data-record="khayal">Open record <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="record-card" data-collection="songs" data-tradition="folk" data-search="lavani maharashtra folk dance dholki performance marathi">
+            <button class="record-image image-blue" type="button" data-record="lavani" aria-label="Open Lavani: rhythm in movement">
+              <img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=900&q=80" alt="Performers and audience at a live event, illustrative image" loading="lazy">
+              <span class="image-label">FOLK / LAVANI</span><span class="image-arrow" aria-hidden="true">↗</span>
+            </button>
+            <div class="record-meta"><span>FOLK &amp; REGIONAL</span><span>MAHARASHTRA</span></div>
+            <h3>Lavani: rhythm in movement</h3>
+            <p>Song, poetry and dance set to the pulse of the dholki.</p>
+            <button class="record-open" type="button" data-record="lavani">Open record <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="record-card" data-collection="instruments" data-tradition="carnatic" data-search="nadaswaram temple music carnatic tamil nadu wind instrument">
+            <button class="record-image image-violet" type="button" data-record="nadaswaram" aria-label="Open Nadaswaram: music for a threshold">
+              <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=900&q=80" alt="Musicians performing together on stage, illustrative image" loading="lazy">
+              <span class="image-label">INSTRUMENT / WIND</span><span class="image-arrow" aria-hidden="true">↗</span>
+            </button>
+            <div class="record-meta"><span>CARNATIC</span><span>TAMIL NADU</span></div>
+            <h3>Nadaswaram: music for a threshold</h3>
+            <p>A powerful wind instrument woven into celebration and ritual.</p>
+            <button class="record-open" type="button" data-record="nadaswaram">Open record <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="record-card" data-collection="instruments" data-tradition="hindustani" data-search="sitar strings hindustani instrument india north plucked lute">
+            <button class="record-image image-brass" type="button" data-record="sitar" aria-label="Open Sitar: strings of North India">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Sitar_MET_259651.jpg" alt="An 18th-century Indian sitar in the Metropolitan Museum of Art collection" loading="lazy">
+              <span class="image-label">INSTRUMENT / SITAR</span><span class="image-arrow" aria-hidden="true">↗</span>
+            </button>
+            <div class="record-meta"><span>HINDUSTANI</span><span>STRINGS</span></div>
+            <h3>Sitar: strings of North India</h3>
+            <p>A plucked lute with a resonant, many-layered voice.</p>
+            <button class="record-open" type="button" data-record="sitar">Open record <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="record-card" data-collection="instruments" data-tradition="hindustani" data-search="tabla percussion hindustani drums dayan bayan rhythm india">
+            <button class="record-image image-rust" type="button" data-record="tabla" aria-label="Open Tabla: a language of rhythm">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Tabla%2C_musical_instrument..JPG" alt="A pair of tabla drums" loading="lazy">
+              <span class="image-label">INSTRUMENT / TABLA</span><span class="image-arrow" aria-hidden="true">↗</span>
+            </button>
+            <div class="record-meta"><span>HINDUSTANI</span><span>PERCUSSION</span></div>
+            <h3>Tabla: a language of rhythm</h3>
+            <p>Two hand drums, many tones, and a vocabulary of bols.</p>
+            <button class="record-open" type="button" data-record="tabla">Open record <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="record-card" data-collection="instruments" data-tradition="hindustani" data-search="bansuri bamboo flute hindustani wind instrument india">
+            <button class="record-image image-sage" type="button" data-record="bansuri" aria-label="Open Bansuri: breath through bamboo">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Bansuri_bamboo_flute_23inch.jpg" alt="A 23-inch bamboo bansuri flute" loading="lazy">
+              <span class="image-label">INSTRUMENT / BANSURI</span><span class="image-arrow" aria-hidden="true">↗</span>
+            </button>
+            <div class="record-meta"><span>HINDUSTANI</span><span>WIND</span></div>
+            <h3>Bansuri: breath through bamboo</h3>
+            <p>A simple bamboo flute shaped by breath, pitch and phrasing.</p>
+            <button class="record-open" type="button" data-record="bansuri">Open record <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="record-card" data-collection="instruments" data-tradition="carnatic" data-search="mridangam carnatic percussion barrel drum karnataka rhythm">
+            <button class="record-image image-indigo" type="button" data-record="mridangam" aria-label="Open Mridangam: the pulse of a performance">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Man_playing_Mridangam_in_Bhoganandeeshwara_Temple.jpg" alt="A musician playing a mridangam at Bhoganandeeshwara Temple" loading="lazy">
+              <span class="image-label">INSTRUMENT / MRIDANGAM</span><span class="image-arrow" aria-hidden="true">↗</span>
+            </button>
+            <div class="record-meta"><span>CARNATIC</span><span>PERCUSSION</span></div>
+            <h3>Mridangam: the pulse of a performance</h3>
+            <p>A double-headed drum at the heart of Carnatic rhythm.</p>
+            <button class="record-open" type="button" data-record="mridangam">Open record <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="record-card" data-collection="songs" data-tradition="folk" data-search="bihu assam seasonal folk dhol pepa spring dance song">
+            <button class="record-image image-marigold" type="button" data-record="bihu" aria-label="Open Bihu: songs of the spring">
+              <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=900&q=80" alt="Illustrative image of a live music gathering" loading="lazy">
+              <span class="image-label">FOLK / BIHU</span><span class="image-arrow" aria-hidden="true">↗</span>
+            </button>
+            <div class="record-meta"><span>FOLK &amp; REGIONAL</span><span>ASSAM</span></div>
+            <h3>Bihu: songs of the spring</h3>
+            <p>Seasonal songs and dance carried by dhol, pepa and community.</p>
+            <button class="record-open" type="button" data-record="bihu">Open record <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="record-card" data-collection="songs" data-tradition="folk" data-search="pandavani chhattisgarh oral epic mahabharata tambura folk story song">
+            <button class="record-image image-monsoon" type="button" data-record="pandavani" aria-label="Open Pandavani: an epic carried in song">
+              <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Illustrative image of a singer performing under stage lights" loading="lazy">
+              <span class="image-label">FOLK / PANDAVANI</span><span class="image-arrow" aria-hidden="true">↗</span>
+            </button>
+            <div class="record-meta"><span>FOLK &amp; REGIONAL</span><span>CHHATTISGARH</span></div>
+            <h3>Pandavani: an epic carried in song</h3>
+            <p>Mahabharata stories brought to life through voice and tambura.</p>
+            <button class="record-open" type="button" data-record="pandavani">Open record <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="record-card" data-collection="songs" data-tradition="folk" data-search="manganiyar rajasthan desert folk kamaicha devotional celebratory songs">
+            <button class="record-image image-terracotta" type="button" data-record="manganiyar" aria-label="Open Manganiyar: songs of the desert">
+              <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Illustrative image of musicians performing for an audience" loading="lazy">
+              <span class="image-label">FOLK / MANGANIYAR</span><span class="image-arrow" aria-hidden="true">↗</span>
+            </button>
+            <div class="record-meta"><span>FOLK &amp; REGIONAL</span><span>RAJASTHAN</span></div>
+            <h3>Manganiyar: songs of the desert</h3>
+            <p>A living repertoire of celebratory and devotional songs.</p>
+            <button class="record-open" type="button" data-record="manganiyar">Open record <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="record-card" data-collection="songs" data-tradition="folk" data-search="powada marathi maharashtra shahir ballad heroic narrative folk">
+            <button class="record-image image-plum" type="button" data-record="powada" aria-label="Open Powada: ballads in a bold voice">
+              <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Illustrative image of a crowd gathered for live music" loading="lazy">
+              <span class="image-label">FOLK / POWADA</span><span class="image-arrow" aria-hidden="true">↗</span>
+            </button>
+            <div class="record-meta"><span>FOLK &amp; REGIONAL</span><span>MAHARASHTRA</span></div>
+            <h3>Powada: ballads in a bold voice</h3>
+            <p>Marathi narrative songs performed by the traditional shahir.</p>
+            <button class="record-open" type="button" data-record="powada">Open record <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="record-card" data-collection="songs" data-tradition="folk" data-search="rasiya braj uttar pradesh folk song poetry festive gathering">
+            <button class="record-image image-turmeric" type="button" data-record="rasiya" aria-label="Open Rasiya: songs from Braj">
+              <img src="https://images.unsplash.com/photo-1501612780327-45045538702b?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Illustrative image of a folk music performance" loading="lazy">
+              <span class="image-label">FOLK / RASIYA</span><span class="image-arrow" aria-hidden="true">↗</span>
+            </button>
+            <div class="record-meta"><span>FOLK &amp; REGIONAL</span><span>BRAJ</span></div>
+            <h3>Rasiya: songs from Braj</h3>
+            <p>Folk poetry and melody shared at festive gatherings.</p>
+            <button class="record-open" type="button" data-record="rasiya">Open record <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="record-card media-card" data-collection="videos" data-tradition="folk" data-search="dollu kunitha karnataka folk dance drum video performance">
+            <div class="media-screen">
+              <video controls preload="none" poster="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Dollu_Kunitha_-_Karnataka_Folk_Art3.webm/960px--Dollu_Kunitha_-_Karnataka_Folk_Art3.webm.jpg">
+                <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/3/3f/Dollu_Kunitha_-_Karnataka_Folk_Art3.webm/Dollu_Kunitha_-_Karnataka_Folk_Art3.webm.240p.vp9.webm" type="video/webm; codecs=vp9,opus">
+                Your browser does not support this video. <a href="https://commons.wikimedia.org/wiki/File:Dollu_Kunitha_-_Karnataka_Folk_Art3.webm">Open the source video</a>.
+              </video>
+              <span class="media-label">VIDEO / KARNATAKA</span>
+            </div>
+            <div class="record-meta"><span>DOLLU KUNITHA</span><span>6 MIN</span></div>
+            <h3>Dollu Kunitha: Karnataka folk art</h3>
+            <p>A drum-led community dance performed by Shrikanth Gowdar and team.</p>
+            <a class="record-open" href="https://commons.wikimedia.org/wiki/File:Dollu_Kunitha_-_Karnataka_Folk_Art3.webm" target="_blank" rel="noopener noreferrer">Source: Santhosh Notagar99, CC0 <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="record-card media-card" data-collection="videos" data-tradition="folk" data-search="lavani pune festival maharashtra video folk dance tamasha">
+            <div class="media-screen archive-screen">
+              <iframe src="https://archive.org/embed/dni.ncaa.CVI-SUR_R_1744-UMHB" title="Pune Festival: Lavani archival video" loading="lazy" allowfullscreen></iframe>
+              <span class="media-label">ARCHIVAL VIDEO / PUNE</span>
+            </div>
+            <div class="record-meta"><span>LAVANI</span><span>1994</span></div>
+            <h3>Pune Festival: Lavani</h3>
+            <p>A Surabhi TV archive feature with Lavani dancers reflecting on their performances.</p>
+            <a class="record-open" href="https://archive.org/details/dni.ncaa.CVI-SUR_R_1744-UMHB" target="_blank" rel="noopener noreferrer">Archive record · rights: Cinema Vision India <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="record-card media-card" data-collection="videos" data-tradition="folk" data-search="sowing songs rice planting field recording work songs western ghats yadavalli india">
+            <div class="media-screen archive-screen">
+              <iframe src="https://archive.org/embed/work_songs_rice_mayyourriceneverburn" title="Rice planting and agricultural work songs field recording collection" loading="lazy" allowfullscreen></iframe>
+              <span class="media-label">FIELD AUDIO / RICE SONGS</span>
+            </div>
+            <div class="record-meta"><span>SOWING SONGS</span><span>FIELD RECORDING</span></div>
+            <h3>Songs from the rice fields</h3>
+            <p>A field-recording collection documenting rice-planting and agricultural work songs, including material from India.</p>
+            <a class="record-open" href="https://archive.org/details/work_songs_rice_mayyourriceneverburn" target="_blank" rel="noopener noreferrer">Open recording collection <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="record-card media-card" data-collection="videos" data-tradition="folk" data-search="jogula jogul kannada lullaby cradle song karnataka video">
+            <div class="media-screen jogula-screen">
+              <img src="https://images.unsplash.com/photo-1691067891389-54a890f2b3d2?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="A caregiver holding a baby, illustrative image for a lullaby archive search" loading="lazy">
+              <span class="media-label">SOURCE SEARCH / KANNADA</span>
+            </div>
+            <div class="record-meta"><span>JOGULA</span><span>LULLABY</span></div>
+            <h3>Jogula: lullabies at home</h3>
+            <p>A place to gather Kannada cradle songs and family-held recordings.</p>
+            <a class="record-open" href="https://www.youtube.com/results?search_query=Kannada+traditional+jogula+lullaby" target="_blank" rel="noopener noreferrer">Search public video sources <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+        <p class="empty-state" id="empty-state" hidden>No records match that search. Try another word or tradition.</p>
+      </section>
+
+      <section class="purpose-section" id="about">
+        <div class="purpose-number">01 <span>/ OUR PURPOSE</span></div>
+        <div class="purpose-copy">
+          <h2>Preservation begins<br>with <em>listening.</em></h2>
+          <p>Music lives in more than a recording. It carries language, place, memory and the knowledge of its makers. Swarasetu is a starting point for documenting those connections with care.</p>
+        </div>
+        <div class="purpose-note"><span class="note-mark" aria-hidden="true">“</span><p>Credit the artist.<br>Name the place.<br>Keep the context.</p></div>
+      </section>
+
+      <section class="listen-section" id="listen" aria-labelledby="listen-title">
+        <div>
+          <p class="eyebrow">YOUR LISTENING ROOM</p>
+          <h2 id="listen-title">Bring a recording<br><em>into the room.</em></h2>
+        </div>
+        <div class="listen-action">
+          <p>Choose an audio file on your device to preview it here. It stays in this browser session and is not uploaded.</p>
+          <label class="upload-button" for="audio-file"><span aria-hidden="true">＋</span> Choose an audio file</label>
+          <input class="visually-hidden" id="audio-file" type="file" accept="audio/*">
+          <p class="file-name" id="file-name" aria-live="polite">No audio selected</p>
+          <audio id="audio-preview" controls hidden></audio>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">s</span><span>swara<span class="brand-light">setu</span></span></a>
+      <p>A living archive for the sounds we carry.</p>
+      <a href="#top" class="back-top">Back to top ↑</a>
+    </footer>
+
+    <dialog class="record-dialog" id="record-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="Close record details">×</button>
+      <p class="eyebrow" id="dialog-category">ARCHIVE RECORD</p>
+      <h2 id="dialog-title"></h2>
+      <p class="dialog-place" id="dialog-place"></p>
+      <p class="dialog-description" id="dialog-description"></p>
+      <a class="dialog-image-credit" id="dialog-image-credit" target="_blank" rel="noopener noreferrer" hidden>Image source &amp; credit ↗</a>
+      <div class="dialog-details"><span>TRADITION</span><strong id="dialog-tradition"></strong><span>LISTENING NOTE</span><strong id="dialog-note"></strong></div>
+      <p class="dialog-hint">To hear an excerpt, use the listening room below and choose an audio file from your device.</p>
+      <a class="text-link" href="#listen" id="dialog-listen">Go to listening room <span aria-hidden="true">↓</span></a>
+    </dialog>
+  </body>
+</html>
